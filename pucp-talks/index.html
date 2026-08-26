@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pucp-landing-wrapper">
+        <div class="bloque1">
+            <img class="icon1-top" src="bloque1-icon3.png" alt="">
+            <img class="icon1-bottom" src="bloque1-icon1.png" alt="">
+            <div class="bloque1Container">
+                <div class="logo">
+                    <img src="logo_pro.svg" alt="">
+                </div>
+                <div class="bloque1ContainerText">
+                    <img src="bloque1-top.png" alt="">
+                    <h3>Charlas virtuales de carreras</h3>
+                    <span>Todos los martes, miércoles y jueves de setiembre</span>
+                </div>
+                <div class="bloque1ContainerForm">
+                    <div class="bloque1ContainerForm__content" id="registro">
+                        <h2>Reserva tu lugar en <b>PUCP Talks</b></h2>
+                        <p>Selecciona la charla que quieres vivir y déjanos tus datos para completar tu inscripción</p>
+                        <form id="my-form-pregrado" method="POST">
+                            <div class="double__form">
+                                <input class="input-dinamico-estudiante" id="names" type="text" name="names" maxlength="40" autocomplete="off" placeholder="Nombres" required />
+                                <input class="input-dinamico-estudiante" id="paternal_surname" type="text" name="paternal_surname" maxlength="40" autocomplete="off" placeholder="Apellido Paterno" required />
+                            </div>
+                            <div class="double__form">
+                                <input class="input-dinamico-estudiante" id="maternal_surname" type="text" name="maternal_surname" maxlength="40" autocomplete="off" placeholder="Apellido Materno" required />
+                                <select class="input-dinamico-estudiante" id="type-document" required name="type-document">
+                                    <option value="" disabled selected>Tipo de documento</option>
+                                    <option value="DNI">DNI</option>
+                                    <option value="Carné de Extranjería">Carnet de Extranjería</option>
+                                    <option value="Pasaporte">Pasaporte</option>
+                                </select>
+                            </div>
+                            <div class="double__form">
+                                <input class="input-dinamico-estudiante" id="number-document" type="text" name="number-document" maxlength="40" autocomplete="off" required placeholder="Nro de documento" />
+                                <input class="input-dinamico-estudiante" id="email" type="email" name="email" maxlength="40" autocomplete="off" placeholder="Correo" required />
+                            </div>
+                            <div class="double__form">
+                                <input class="input-dinamico-estudiante" id="phone" type="tel" name="phone" maxlength="40" autocomplete="off" placeholder="Celular" required />
+                                <div class="form__container--school" style="width: 100%;">
+                                    <input class="input-dinamico-estudiante" list="lista-colegios" id="search-colegio" type="text" placeholder="Busca tu colegio..." autocomplete="off">
+                                    <datalist id="lista-colegios"></datalist>
+                                    <input type="hidden" id="school-code" required name="school">
+                                </div>
+                            </div>
+                            <div class="double__form">
+                                <select class="input-dinamico-estudiante" required id="degree-study" name="degree-study">
+                                    <option value="" disabled selected>Año de egreso</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2025">2025</option>
+                                </select>
+                                <select class="input-dinamico-estudiante" required id="career-1" name="career-1">
+                                    <option value="" disabled selected>Carrera de interés</option>
+                                </select>
+                            </div>
+                            <div class="authorization">
+                                <input type="checkbox" required name="" id="">
+                                <p>Autorizo a la Pontificia Universidad Católica del Perú a utilizar mis datos personales para los fines mencionados. Ver autorización.*</p>
+                            </div>
+                            <div class="authorization">
+                                <input type="checkbox" required name="" id="">
+                                <p>Autorizo a la Pontificia Universidad Católica del Perú a enviarme información sobre sus programas académicos.</p>
+                            </div>
+                            <button type="submit">¡INSCRIBIRME!<span><img src="arrow-right.png" alt=""></span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bloque2">
+            <img class="bloque2--icon" src="bloque2-icon1.png">
+            <div class="bloque2Container">
+                <div class="bloque2ContainerText">
+                    <img src="bloque2-image1.png" alt="">
+                    <div class="bloque2ContainerText__content">
+                        <h3>DESCUBRE TU CARRERA <br> <span>DESDE ADENTRO</span></h3>
+                        <p>Conoce cómo es realmente la carrera que te interesa a través de tres miradas: un docente que te contará qué aprenderás, un estudiante que vive hoy la experiencia PUCP y un egresado que ya la está llevando al mundo profesional.</p>
+                        <div class="bloque2ContainerText__content--info">
+                            <h4>Todos los martes, miércoles y jueves de septiembre</h4>
+                            <div><span></span></div>
+                            <h4><span>Modalidad:</span><br>Charlas virtuales</h4>
+                            <div><span></span></div>
+                            <h4><span>Horarios:</span><br>5:00 p. m. y 6:00 p. m.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloque2ContainerInfo">
+                    <p>Para participar solo debes encontrar la carrera que más te interese, seleccionar tu charla y registrarte.</p>
+                    <button id="btn-inscribirme1">¡ELIGE TU PUCP TALK AQUÍ!<span><img src="arrow-right.png" alt=""></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="bloque3">
+            <img class="bloque3--top--icon1" src="bloque3-icon1.png" alt="">
+            <img class="icon1-bottom" src="bloque1-icon1.png" alt="">
+            <div class="bloque3Container">
+                <div class="bloque3Info">
+                    <h3>NO SOLO CONOZCAS UNA CARRERA, <br><span>DESCUBRE CÓMO SE VIVE</span></h3>
+                    <p>Elegir qué estudiar es más fácil cuando puedes conocer una carrera desde diferentes momentos de la experiencia.</p>
+                    <div class="bloque3InfoCards">
+                        <div class="bloque3InfoCards__item">
+                            <div class="bloque3InfoCards__item--front">
+                                <img src="bloque3-image1.png" alt="">
+                                <h4>LO QUE APRENDERÁS</h4>
+                            </div>
+                            <div class="bloque3InfoCards__item--back">
+                                <p>Un docente PUCP te contará qué estudiarás, los retos de la carrera y hacia dónde puede llevarte.</p>
+                            </div>
+                        </div>
+                        <div class="bloque3InfoCards__item">
+                            <div class="bloque3InfoCards__item--front">
+                                <img src="bloque3-image2.png" alt="">
+                                <h4>LO QUE VIVIRÁS</h4>
+                            </div>
+                            <div class="bloque3InfoCards__item--back">
+                                <p>Un estudiante PUCP compartirá cómo es estudiar esa carrera, sus experiencias y aquello que quizás todavía no te imaginas de la vida universitaria.</p>
+                            </div>
+                        </div>
+                        <div class="bloque3InfoCards__item">
+                            <div class="bloque3InfoCards__item--front">
+                                <img src="bloque3-image3.png" alt="">
+                                <h4>LO QUE PODRÍAS LOGRAR</h4>
+                            </div>
+                            <div class="bloque3InfoCards__item--back">
+                                <p>Un egresado PUCP te mostrará cómo esa carrera se convierte en oportunidades, proyectos y desarrollo profesional.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Docente + estudiante + egresado <span></span></h5>
+                    <p>Tres miradas para ayudarte a encontrar una carrera que tenga sentido para ti.</p>
+                    <button id="btn-inscribirme2">VER CHARLAS<span><img src="arrow-right.png" alt=""></span></button>
+                    <img class="bloque3--bottom--icon2" src="bloque3-icon2.png" alt="">
+                </div>
+                <div class="bloque3Separator">
+                    <span></span>
+                </div>
+                <div class="bloque3Carreras">
+                    <h3>¿QUÉ CARRERA QUIERES DESCUBRIR?</h3>
+                    <p>Busca la carrera que te interesa y reserva tu lugar en su PUCP Talk.</p>
+                    <div class="bloque3Carreras__lupa">
+                        <input type="text" placeholder="Busca una carrera...">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                width="612.08px" height="612.08px" viewBox="0 0 612.08 612.08" style="color: #fe8512;"
+                                xml:space="preserve">
+                            <g>
+                                <path d="M237.927,0C106.555,0,0.035,106.52,0.035,237.893c0,131.373,106.52,237.893,237.893,237.893
+                                    c50.518,0,97.368-15.757,135.879-42.597l0.028-0.028l176.432,176.433c3.274,3.274,8.48,3.358,11.839,0l47.551-47.551
+                                    c3.274-3.274,3.106-8.703-0.028-11.838L433.223,373.8c26.84-38.539,42.597-85.39,42.597-135.907C475.82,106.52,369.3,0,237.927,0z
+                                    M237.927,419.811c-100.475,0-181.918-81.443-181.918-181.918S137.453,55.975,237.927,55.975s181.918,81.443,181.918,181.918
+                                    S338.402,419.811,237.927,419.811z"/>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <!-- Code injected by live-server -->
+                        </svg>
+                    </div>
+                    <div class="bloque3CarrerasContent">
+                        <div class="bloque3CarrerasContent__ct">
+                            <div class="bloque3CarrerasContent__ct--fecha">
+                                <h3>SEMANA 1</h3>
+                            </div>
+                            <div class="bloque3CarrerasContent__ct--content">
+                                <div class="bloque3CarrerasContent__ctInfo">
+                                    <h3 class="bloque3CarrerasContent__ctInfo--day">MARTES 1</h3>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 1</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>5:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>DERECHO</h3>
+                                                <div class="bloque3CtInfo__bottomSeparate"><span></span></div>
+                                                <h3>ING. BIOMÉDICA</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 2</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>6:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>LINGÛÍSTICA</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bloque3CarrerasContent__ctInfo">
+                                    <h3 class="bloque3CarrerasContent__ctInfo--day">MIÉRCOLES 2</h3>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 1</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>5:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>ING. INDUSTRIAL</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 2</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>6:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>FINANZAS</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bloque3CarrerasContent__ctInfo">
+                                    <h3 class="bloque3CarrerasContent__ctInfo--day">JUEVES 3</h3>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 1</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>5:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>ING. CIVIL</h3>
+                                                <div class="bloque3CtInfo__bottomSeparate"><span></span></div>
+                                                <h3>RELACIONES INTERNACIONALES <br> + SOCIOLOGÍA</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 2</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>6:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>CONTABILIDAD</h3>
+                                                <div class="bloque3CtInfo__bottomSeparate"><span></span></div>
+                                                <h3>HUMANIDADES</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bloque3CarrerasContent__ct">
+                            <div class="bloque3CarrerasContent__ct--fecha">
+                                <h3>SEMANA 2</h3>
+                            </div>
+                            <div class="bloque3CarrerasContent__ct--content">
+                                <div class="bloque3CarrerasContent__ctInfo">
+                                    <h3 class="bloque3CarrerasContent__ctInfo--day">MARTES 8</h3>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 1</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>5:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>GESTIÓN</h3>
+                                                <div class="bloque3CtInfo__bottomSeparate"><span></span></div>
+                                                <h3>ARQUITECTURA</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 2</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>6:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>ECONOMÍA</h3>
+                                                <div class="bloque3CtInfo__bottomSeparate"><span></span></div>
+                                                <h3>ARQUEOLOGÍA</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bloque3CarrerasContent__ctInfo">
+                                    <h3 class="bloque3CarrerasContent__ctInfo--day">MIÉRCOLES 9</h3>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 1</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>5:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>ING. DE MINAS</h3>
+                                                <div class="bloque3CtInfo__bottomSeparate"><span></span></div>
+                                                <h3>COM. AUDIOVISUAL</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 2</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>6:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>ING. AMBIENTAL <br> Y SOSTENIBLE</h3>
+                                                <div class="bloque3CtInfo__bottomSeparate"><span></span></div>
+                                                <h3>LITERATURA</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bloque3CarrerasContent__ctInfo">
+                                    <h3 class="bloque3CarrerasContent__ctInfo--day">JUEVES 1O</h3>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 1</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>5:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>ING. MECATRÓNICA</h3>
+                                                <div class="bloque3CtInfo__bottomSeparate"><span></span></div>
+                                                <h3>EDUCACIÓN + <br> EDUCACIÓN ARTÍSTICA</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 2</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>6:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>DISEÑO INDUSTRIAL</h3>
+                                                <div class="bloque3CtInfo__bottomSeparate"><span></span></div>
+                                                <h3>FILOSOFÍA</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>         
+                        <div class="bloque3CarrerasContent__ct">
+                            <div class="bloque3CarrerasContent__ct--fecha">
+                                <h3>SEMANA 3</h3>
+                            </div>
+                            <div class="bloque3CarrerasContent__ct--content">
+                                <div class="bloque3CarrerasContent__ctInfo">
+                                    <h3 class="bloque3CarrerasContent__ctInfo--day">MARTES 15</h3>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 1</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>5:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>ING. QUÍMICA</h3>
+                                                <div class="bloque3CtInfo__bottomSeparate"><span></span></div>
+                                                <h3>TURISMO + HOTELERÍA</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 2</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>6:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>MATEMÁTICA + FÍSICA + QUÍMICA</h3>
+                                                <div class="bloque3CtInfo__bottomSeparate"><span></span></div>
+                                                <h3>GEOGRAFÍA Y MEDIO AMBIENTE</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bloque3CarrerasContent__ctInfo">
+                                    <h3 class="bloque3CarrerasContent__ctInfo--day">MIÉRCOLES 16</h3>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 1</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>5:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>TEATRO</h3>
+                                                <div class="bloque3CtInfo__bottomSeparate"><span></span></div>
+                                                <h3>ING. MECÁNICA</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 2</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>6:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>CREPO + DANZA</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bloque3CarrerasContent__ctInfo">
+                                    <h3 class="bloque3CarrerasContent__ctInfo--day">JUEVES 17</h3>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 1</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>5:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>MÚSICA</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 2</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>6:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>ING. GEOLÓGICA</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="bloque3CarrerasContent__ct">
+                            <div class="bloque3CarrerasContent__ct--fecha">
+                                <h3>SEMANA 4</h3>
+                            </div>
+                            <div class="bloque3CarrerasContent__ct--content">
+                                <div class="bloque3CarrerasContent__ctInfo">
+                                    <h3 class="bloque3CarrerasContent__ctInfo--day">MARTES 22</h3>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 1</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>5:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>PERIODISMO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 2</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>6:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>GASTRONOMÍA</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bloque3CarrerasContent__ctInfo">
+                                    <h3 class="bloque3CarrerasContent__ctInfo--day">MIÉRCOLES 23</h3>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 1</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>5:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>PSICOLOGÍA</h3>
+                                                <div class="bloque3CtInfo__bottomSeparate"><span></span></div>
+                                                <h3>CIENCIA POLÍTICA Y GOBIERNO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 2</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>6:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>ANTROPOLOGÍA</h3>
+                                                <div class="bloque3CtInfo__bottomSeparate"><span></span></div>
+                                                <h3>HISTORIA</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bloque3CarrerasContent__ctInfo">
+                                    <h3 class="bloque3CarrerasContent__ctInfo--day">JUEVES 24</h3>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 1</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>5:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>ING. INFORMÁTICA</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 2</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>6:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>ARTE, MODA Y DISEÑO TEXTIL</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>      
+                        <div class="bloque3CarrerasContent__ct">
+                            <div class="bloque3CarrerasContent__ct--fecha">
+                                <h3>SEMANA 5</h3>
+                            </div>
+                            <div class="bloque3CarrerasContent__ct--content">
+                                <div class="bloque3CarrerasContent__ctInfo">
+                                    <h3 class="bloque3CarrerasContent__ctInfo--day">MARTES 29</h3>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 1</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>5:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>PUBLICIDAD</h3>
+                                                <div class="bloque3CtInfo__bottomSeparate"><span></span></div>
+                                                <h3>ING. ELECTRÓNICA</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 2</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>6:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>COMUNICACIÓN PARA EL DESARROLLO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bloque3CarrerasContent__ctInfo">
+                                    <h3 class="bloque3CarrerasContent__ctInfo--day">MIÉRCOLES 30</h3>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 1</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>5:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>DISEÑO GRÁFICO</h3>
+                                                <div class="bloque3CtInfo__bottomSeparate"><span></span></div>
+                                                <h3>ING. DE LAS TELECOMUNICACIONES</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bloque3CarrerasContent__ctInfo--contentDay">
+                                        <div class="bloque3CtInfo">
+                                            <div class="bloque3CtInfo__top">
+                                                <h3>TURNO 2</h3>
+                                                <div class="bloque3CtInfo--topSeparate"><span></span></div>
+                                                <h3>6:00 p. m.</h3>
+                                            </div>
+                                            <div class="bloque3CtInfoSeparate"><span></span></div>
+                                            <div class="bloque3CtInfo__bottom">
+                                                <h3>ARTES PLÁSTICAS (PINTURA, ESCULTURA, GRABADO)</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <button id="btn-inscribirme3">QUIERO PARTICIPAR<span><img src="arrow-right.png" alt=""></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="bloque4">
+            <img class="bloque4--icon" src="bloque2-icon1.png">
+            <div class="bloque4Container">
+                <h3 class="bloque4__title">PREGUNTAS FRECUENTES</h3>
+                <div class="bloque4__wrapper">
+                    <div class="bloque4__item">
+                        <div class="bloque4Item__pregunta">
+                            <h4>¿PUCP Talks es virtual?</h4>
+                            <span>-</span>
+                        </div>
+                        <div class="bloque4Item__respuesta open">
+                            <p>Sí. Podrás conectarte a la charla de la carrera que hayas seleccionado desde donde estés.</p>
+                        </div>
+                    </div>
+                    <div class="bloque4__item">
+                        <div class="bloque4Item__pregunta">
+                            <h4>¿Quiénes participarán en las charlas?</h4>
+                            <span>+</span>
+                        </div>
+                        <div class="bloque4Item__respuesta close">
+                            <p>En cada PUCP Talk podrás conocer diferentes perspectivas de la carrera a través de docentes, estudiantes y egresados PUCP.</p>
+                        </div>
+                    </div>
+                    <div class="bloque4__item">
+                        <div class="bloque4Item__pregunta">
+                            <h4>¿A quiénes están dirigidos los PUCP Talks?</h4>
+                            <span>+</span>
+                        </div>
+                        <div class="bloque4Item__respuesta close">
+                            <p>A estudiantes de 4.° y 5.° de secundaria y jóvenes que terminaron el colegio en 2024 o 2025.</p>
+                        </div>
+                    </div>
+                    <div class="bloque4__item">
+                        <div class="bloque4Item__pregunta">
+                            <h4>¿Cuándo se realizarán?</h4>
+                            <span>+</span>
+                        </div>
+                        <div class="bloque4Item__respuesta close">
+                            <p>Durante septiembre de 2026, los martes, miércoles y jueves, en horarios de 5:00 p. m. y 6:00 p. m., según la carrera.</p>
+                        </div>
+                    </div>
+                    <div class="bloque4__item">
+                        <div class="bloque4Item__pregunta">
+                            <h4>¿Cómo elijo mi charla?</h4>
+                            <span>+</span>
+                        </div>
+                        <div class="bloque4Item__respuesta close">
+                            <p>Busca la carrera que te interesa en el calendario, selecciona su PUCP Talk y completa tu registro.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <img src="logo_pro.svg" alt="">
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
